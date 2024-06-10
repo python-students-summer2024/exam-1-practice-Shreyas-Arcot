@@ -52,7 +52,7 @@ def respond_to_anything():
     3. If the user enters text ending in the "!" character, print the response, "Exciting!"
     4. If the user enters text that does not include a punctuation mark at the end (punctuation marks include ".", "?", and "!"), print the response, "Please include a punctuation mark at the end of your sentence!"
   """
-
+  
   sentence = input("Give me a sentence")
   if sentence.endswith("."):
     print("That's true.")
@@ -62,7 +62,6 @@ def respond_to_anything():
     print("Exciting!")
   else:
     print("Please include a punctuation mark at the end of your sentence!")
-
 
 def respond_to_anything_but_nonsense():
   """

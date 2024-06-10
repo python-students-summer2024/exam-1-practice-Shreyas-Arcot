@@ -61,7 +61,6 @@ def play_game():
             print("Invalid response!")
             break
             
-    
     if times_played == 4:
         print("You guessed " + str(int(correct_count * 100 /4)) + '% of the random numbers correctly.')
 
