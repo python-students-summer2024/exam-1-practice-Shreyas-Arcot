@@ -16,6 +16,14 @@ def main():
 
   # for example... the following line will call the bark() function in problem_set_1 whenever this main.py file is run.
   bark()
+  bark_with_validation()
+  respond_to_anything()
+  respond_to_anything_but_nonsense()
+  weather_helper()
+  get_random_int(5,15)
+  get_guess(2)
+  play_game()
+  
 
 # call the main function
 main()

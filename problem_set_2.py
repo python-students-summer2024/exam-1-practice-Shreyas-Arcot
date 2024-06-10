@@ -30,4 +30,30 @@ def weather_helper():
     2. Do not print anything more than what is requested in the instructions.
     4. The capitalization of the user's responses must not matter to the outcome of the program.
   """
-
+  current_temperature = int(input("What is the current temperature? (between -70 and 134)"))
+  if not(-70 <= current_temperature <= 134):
+    print("Invalid temperature!")
+  elif current_temperature < 40:
+    is_it_snowing = input ("Is it snowing?").lower()
+    if is_it_snowing == is_it_snowing == "yes" or is_it_snowing == "yeah" or is_it_snowing == "yup":
+      are_you_wearing_a_jacket = input("Are you wearing a jacket?").lower()
+      if are_you_wearing_a_jacket ==  are_you_wearing_a_jacket == "yes" or  are_you_wearing_a_jacket == "yeah" or  are_you_wearing_a_jacket == "yup":
+        print("Glad to hear you're dressed appropriately!")
+      elif are_you_wearing_a_jacket == "no" or are_you_wearing_a_jacket == "nah" or are_you_wearing_a_jacket == "nope":
+        print("What were you thinking when you left home today?!")
+    elif is_it_snowing == "no" or is_it_snowing == "nah" or is_it_snowing == "nope":
+      is_it_raining = input("Is it raining?").lower()
+      if is_it_raining == "yes" or is_it_raining == "yup" or is_it_raining == "yeah":
+        do_you_have_an_umbrella = input("Do you have an umbrella?").lower()
+        if do_you_have_an_umbrella == "yes" or do_you_have_an_umbrella == "yup" or do_you_have_an_umbrella == "yeah":
+          print("Good job staying dry!")
+        elif do_you_have_an_umbrella == "no" or do_you_have_an_umbrella == "nah" or do_you_have_an_umbrella == "nope":
+          print("You must enjoy getting wet!")
+      elif is_it_raining == "no" or is_it_raining == "nah" or is_it_raining == "nope":
+        print()
+  elif current_temperature > 90:
+    do_you_have_air_conditioning = input("Do you have air conditioning?").lower()
+    if do_you_have_air_conditioning == "yes" or do_you_have_air_conditioning == "yeah" or do_you_have_air_conditioning == "yup":
+      print("Stay cool indoors.")
+    elif do_you_have_air_conditioning == "no" or do_you_have_air_conditioning == "nah" or do_you_have_air_conditioning == "nope":
+      print("I hope you have a fan.")
